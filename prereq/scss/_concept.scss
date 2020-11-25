@@ -1,0 +1,79 @@
+.concept {
+    background: linear-gradient(to bottom, #A193861F 50%, #A1938689 50%);
+    @include sp {
+        background: linear-gradient(to bottom, #A193861F 30%, #A1938689 30%);
+    }
+}
+
+.concept-img {
+    height: 413px;
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+        height: 205px;
+    }
+    .c-img {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    .show {
+        opacity: 1;
+        transition: 1s;
+        transform: translateY(0);
+    }
+    &-1 {
+        background-image: url(../img/andrew-neel-f480QIEvwGI-unsplash.png);
+        background-size: cover;
+        width: 63%;
+        @include sp {
+            width: 50%;
+            background-position: (75% 0%);
+        }
+    }
+    &-2 {
+        background-image: url(../img/joel-mott-mNYL0surXh8-unsplash.png);
+        background-size: cover;
+        width: 37%;
+        margin-left: 11px;
+        @include sp {
+            width: 50%;
+            margin-left: 7px;
+        }
+    }
+}
+
+.concept-bottom {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 69px;
+    @include tab {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .concept-copy {
+        font-size: 4.0rem;
+        margin-top: 24px;
+        font-family: Hiragino Mincho Pro;
+        letter-spacing: 16px;
+        min-width: 443px;
+        @include tab {
+            margin: 0 0 18px 0;
+            font-size: 3.0rem;
+            text-align: center;
+        }
+        @include sp {
+            font-size: 1.8rem;
+        }
+    }
+    .concept-text {
+        width: 40%;
+        margin-left: 57px;
+        @include tab {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+}

@@ -1,0 +1,66 @@
+.first-v {
+    overflow: hidden;
+    &-wrap {
+        display: flex;
+        @include tab {
+            display: none;
+        }    
+    }
+    &-catch {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 46.33%;
+        margin-top: 300px;
+        @include tab {
+            width: 100%;
+            margin-top: 450px;
+            flex-direction: column-reverse;
+            color: white;
+            text-shadow: 0 3px 16px #000000;
+        }
+        @include sp {
+            margin-top: 202px;
+        }
+    }  
+    &-img {
+        background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+        height: 100vh;
+        width: 53.74%;
+        background-size: cover;
+    }
+}
+
+.f-v-catch-hidden {
+    display: none;
+}
+
+.first-v-wrap-sp {
+    display: none;
+    @include tab {
+        overflow: hidden;
+        display: block;
+        background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+.catch-copy {
+    font-size: 3.8rem;
+    font-family: Hiragino Mincho Pro;
+    @include sp {
+        font-size: 2.3rem;
+    }
+}
+
+.catch-copy2 {
+        font-size: 3.8rem;
+        font-family: Zapfino;
+        margin-top: 48px;
+        line-height: 3;
+        @include sp {
+            font-size: 2.8rem;
+        }
+    }
+

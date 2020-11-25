@@ -1,0 +1,74 @@
+.access {
+    background: linear-gradient(180deg, #A193861F 0%, #A193861F 38%, #D0C5BA 38%, #D0C5BA 90%, #A193861F 90%, #A193861F 100%);
+    position: relative;
+    @include tab {
+        background: linear-gradient(180deg, #A193861F 0%, #A193861F 25%, #D0C5BA 25%, #D0C5BA 90%, #A193861F 90%, #A193861F 100%);
+    }
+    .inner {
+        @include sp {
+            width: 100%;
+        }
+    }
+    .title {
+        @include sp {
+            margin-left: 20px;
+        }
+    }
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            flex-direction: column-reverse;
+        }
+    }
+    &-content {
+        width: 34%;
+        @include tab {
+            max-height: 446px;
+            min-width: 207px;
+        }
+        @include sp {
+            margin-left: 20px;
+            width: 56%;
+        }
+    }
+    &-content p:first-child {
+        color: #00000038;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-top: 107px;
+        @include sp {
+            margin-top: 30px;
+        }
+    }
+    &-content p:not(:first-child) {
+        padding-top: 23px;
+        color: white;
+    }
+    &-content p:last-child {
+        margin-bottom: 103px;
+    }
+}
+
+
+
+.access-map {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 66%;
+    height: 425px;
+    @include tab {
+        width: 65%;
+        height: 423.5px;
+    }
+    @include sp {
+        position: static;
+        height: 230px;
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        height: 100%;
+    }
+}
