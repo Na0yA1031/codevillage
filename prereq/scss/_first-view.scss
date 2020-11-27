@@ -44,13 +44,19 @@
         background-size: cover;
         height: 100vh;
     }
+    @include sp {
+        background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x_sp.png);
+        background-position-x: center;
+    }
 }
 
 .catch-copy {
     font-size: 3.8rem;
+    letter-spacing: 3.8px;
     font-family: Hiragino Mincho Pro;
     @include sp {
         font-size: 2.3rem;
+        letter-spacing: 2.5px;
     }
 }
 
@@ -58,9 +64,11 @@
         font-size: 3.8rem;
         font-family: Zapfino;
         margin-top: 48px;
+        letter-spacing: 3.8px;
         line-height: 3;
         @include sp {
             font-size: 2.8rem;
+            letter-spacing: 3px;
         }
     }
 

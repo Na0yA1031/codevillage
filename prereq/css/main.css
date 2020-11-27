@@ -196,10 +196,16 @@ header {
 
 .hd-logo {
   font-size: 3.8rem;
+  letter-spacing: 3.8px;
 }
 @media screen and (max-width: 959px) {
   .hd-logo {
     font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hd-logo {
+    letter-spacing: 2.2px;
   }
 }
 
@@ -216,6 +222,7 @@ nav ul {
 nav ul li {
   color: #707070;
   margin-left: 20px;
+  letter-spacing: 1.8px;
 }
 nav ul a:hover {
   color: black;
@@ -241,12 +248,17 @@ nav ul a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
     line-height: 8;
     z-index: 1;
   }
   .sp-navmenu .under-line {
     line-height: 1.5;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sp-navmenu {
+    top: 70px;
   }
 }
 
@@ -395,14 +407,22 @@ nav ul a:hover {
     height: 100vh;
   }
 }
+@media screen and (max-width: 600px) {
+  .first-v-wrap-sp {
+    background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x_sp.png);
+    background-position-x: center;
+  }
+}
 
 .catch-copy {
   font-size: 3.8rem;
+  letter-spacing: 3.8px;
   font-family: Hiragino Mincho Pro;
 }
 @media screen and (max-width: 600px) {
   .catch-copy {
     font-size: 2.3rem;
+    letter-spacing: 2.5px;
   }
 }
 
@@ -410,11 +430,13 @@ nav ul a:hover {
   font-size: 3.8rem;
   font-family: Zapfino;
   margin-top: 48px;
+  letter-spacing: 3.8px;
   line-height: 3;
 }
 @media screen and (max-width: 600px) {
   .catch-copy2 {
     font-size: 2.8rem;
+    letter-spacing: 3px;
   }
 }
 
@@ -453,8 +475,8 @@ nav ul a:hover {
 }
 @media screen and (max-width: 600px) {
   .concept-img-1 {
+    background-image: url(../img/andrew-neel-f480QIEvwGI-unsplash@2x_sp.png);
     width: 50%;
-    background-position: 75% 0%;
   }
 }
 .concept-img-2 {
@@ -465,6 +487,7 @@ nav ul a:hover {
 }
 @media screen and (max-width: 600px) {
   .concept-img-2 {
+    background-image: url(../img/joel-mott-mNYL0surXh8-unsplash@2x_sp.png);
     width: 50%;
     margin-left: 7px;
   }
@@ -500,11 +523,13 @@ nav ul a:hover {
 @media screen and (max-width: 600px) {
   .concept-bottom .concept-copy {
     font-size: 1.8rem;
+    letter-spacing: 7.2px;
   }
 }
 .concept-bottom .concept-text {
   width: 40%;
   margin-left: 57px;
+  letter-spacing: 1.6px;
 }
 @media screen and (max-width: 959px) {
   .concept-bottom .concept-text {
@@ -565,11 +590,26 @@ nav ul a:hover {
 .menu-item .menu-1-img {
   background-image: url(../img/jens-lindner-4i7-mcM7xSY-unsplash.png);
 }
+@media screen and (max-width: 600px) {
+  .menu-item .menu-1-img {
+    background-image: url(../img/jens-lindner-4i7-mcM7xSY-unsplash@2x_sp.png);
+  }
+}
 .menu-item .menu-2-img {
   background-image: url(../img/beautiful-beauty-female-247322.png);
 }
+@media screen and (max-width: 600px) {
+  .menu-item .menu-2-img {
+    background-image: url(../img/beautiful-beauty-female-247322@2x_sp.png);
+  }
+}
 .menu-item .menu-3-img {
   background-image: url(../img/edgar-perez-kTBJmeRbAbo-unsplash.png);
+}
+@media screen and (max-width: 600px) {
+  .menu-item .menu-3-img {
+    background-image: url(../img/edgar-perez-kTBJmeRbAbo-unsplash@2x_sp.png);
+  }
 }
 .menu-item-img {
   width: 271px;
@@ -580,6 +620,7 @@ nav ul a:hover {
 @media screen and (max-width: 600px) {
   .menu-item-img {
     width: 100%;
+    background-position-x: center;
   }
 }
 .menu-item .show {
@@ -618,6 +659,7 @@ nav ul a:hover {
 .menu-item-text {
   margin: 34px auto;
   width: 90%;
+  letter-spacing: 1.6px;
 }
 @media screen and (max-width: 959px) {
   .menu-item-text {
@@ -678,6 +720,7 @@ nav ul a:hover {
   font-size: 2.4rem;
   font-weight: bold;
   margin-top: 107px;
+  letter-spacing: 2.4px;
 }
 @media screen and (max-width: 600px) {
   .access-content p:first-child {
@@ -687,6 +730,7 @@ nav ul a:hover {
 .access-content p:not(:first-child) {
   padding-top: 23px;
   color: white;
+  letter-spacing: 1.6px;
 }
 .access-content p:last-child {
   margin-bottom: 103px;
@@ -758,6 +802,7 @@ nav ul a:hover {
 }
 .footer-logo-title {
   font-size: 3.2rem;
+  letter-spacing: 3.2px;
   color: #7070704D;
 }
 @media screen and (max-width: 959px) {
@@ -768,6 +813,7 @@ nav ul a:hover {
 @media screen and (max-width: 600px) {
   .footer-logo-title {
     min-width: 133px;
+    letter-spacing: 1.8px;
   }
 }
 .footer-logo-icon {
@@ -789,6 +835,7 @@ nav ul a:hover {
   width: 184px;
   height: 37px;
   font-size: 1.8rem;
+  letter-spacing: 1.8px;
   color: #707070;
   background-color: #fff;
   border: 1px solid black;

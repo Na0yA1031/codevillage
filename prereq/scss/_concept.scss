@@ -26,8 +26,8 @@
         background-size: cover;
         width: 63%;
         @include sp {
+            background-image: url(../img/andrew-neel-f480QIEvwGI-unsplash@2x_sp.png);
             width: 50%;
-            background-position: (75% 0%);
         }
     }
     &-2 {
@@ -36,6 +36,7 @@
         width: 37%;
         margin-left: 11px;
         @include sp {
+            background-image: url(../img/joel-mott-mNYL0surXh8-unsplash@2x_sp.png);
             width: 50%;
             margin-left: 7px;
         }
@@ -65,11 +66,13 @@
         }
         @include sp {
             font-size: 1.8rem;
+            letter-spacing: 7.2px;
         }
     }
     .concept-text {
         width: 40%;
         margin-left: 57px;
+        letter-spacing: 1.6px;
         @include tab {
             width: 100%;
             margin-left: 0;

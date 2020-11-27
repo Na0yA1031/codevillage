@@ -36,12 +36,14 @@
     }
     &-title {
         font-size: 3.2rem;
+        letter-spacing: 3.2px;
         color: #7070704D;
         @include tab {
             font-size: 1.8rem;
         }
         @include sp {
             min-width: 133px;
+            letter-spacing: 1.8px;
         }
     }
     &-icon {
@@ -62,6 +64,7 @@
     width: 184px;
     height: 37px;
     font-size: 1.8rem;
+    letter-spacing: 1.8px;
     color: #707070;
     background-color: #fff;
     border: 1px solid black;

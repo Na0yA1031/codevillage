@@ -37,6 +37,7 @@
         font-size: 2.4rem;
         font-weight: bold;
         margin-top: 107px;
+        letter-spacing: 2.4px;
         @include sp {
             margin-top: 30px;
         }
@@ -44,6 +45,7 @@
     &-content p:not(:first-child) {
         padding-top: 23px;
         color: white;
+        letter-spacing: 1.6px;
     }
     &-content p:last-child {
         margin-bottom: 103px;
