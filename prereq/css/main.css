@@ -259,6 +259,10 @@ nav ul a:hover {
 @media screen and (max-width: 600px) {
   .sp-navmenu {
     top: 70px;
+    height: 90vh;
+  }
+  .sp-navmenu ul {
+    line-height: 7;
   }
 }
 
@@ -411,6 +415,7 @@ nav ul a:hover {
   .first-v-wrap-sp {
     background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x_sp.png);
     background-position-x: center;
+    height: 90vh;
   }
 }
 
