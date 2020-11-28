@@ -67,6 +67,9 @@
         margin-top: 48px;
         letter-spacing: 3.8px;
         line-height: 3;
+        @include tab {
+            margin-top: 10px;
+        }
         @include sp {
             font-size: 2.8rem;
             letter-spacing: 3px;
