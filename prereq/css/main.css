@@ -185,12 +185,33 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 24px 20px;
-    position: static;
+    position: fixed;
+    background-color: white;
+  }
+  header .hidden {
+    opacity: 0;
+    transition: .5s;
   }
 }
 @media screen and (max-width: 600px) {
   header {
     height: 70px;
+  }
+  header .hidden-2 {
+    opacity: 0;
+    transition: .5s;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .hd-bgc {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hd-bgc-2 {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -201,6 +222,7 @@ header {
 @media screen and (max-width: 959px) {
   .hd-logo {
     font-size: 2.2rem;
+    transition: .8s;
   }
 }
 @media screen and (max-width: 600px) {
@@ -409,6 +431,7 @@ nav ul a:hover {
     background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
     background-size: cover;
     height: 100vh;
+    margin-top: 84px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -416,6 +439,7 @@ nav ul a:hover {
     background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x_sp.png);
     background-position-x: center;
     height: 90vh;
+    margin-top: 70px;
   }
 }
 

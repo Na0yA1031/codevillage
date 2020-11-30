@@ -43,11 +43,13 @@
         background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
         background-size: cover;
         height: 100vh;
+        margin-top: 84px;
     }
     @include sp {
         background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x_sp.png);
         background-position-x: center;
         height: 90vh;
+        margin-top: 70px;
     }
 }
 

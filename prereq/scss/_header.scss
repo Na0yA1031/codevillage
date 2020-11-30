@@ -8,23 +8,50 @@ header {
         justify-content: space-between;
         width: 100%;
         padding: 24px 20px;
-        position: static;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+        .hidden {
+            opacity: 0;
+            transition: .5s;
+        }
     }
     @include sp {
         height: 70px;
+        .hidden-2 {
+            opacity: 0;
+            transition: .5s;
+        }
     }
-
 }
+
+.hd-bgc {
+    @include tab {
+        background-color: rgba(255, 255, 255, .8);
+    }
+}
+
+.hd-bgc-2 {
+    @include sp {
+        background-color: rgba(255, 255, 255, .8);
+
+    }
+}
+
+
+
 
 .hd-logo{
     font-size: 3.8rem;
     letter-spacing: 3.8px;
     @include tab {
         font-size: 2.2rem;
+        transition: .8s;
     }
     @include sp {
         letter-spacing: 2.2px;
     }
+    
+    
 }
 
 

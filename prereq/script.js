@@ -12,6 +12,39 @@ function hamburger() {
 }
 
 
+
+function header_1() {
+    const scrollY = window.pageYOffset;
+
+
+    if (scrollY > 832) {
+        document.getElementById('hd-logo').classList.add('hidden');
+        document.getElementById('header').classList.add('hd-bgc');
+    } else {
+        document.getElementById('hd-logo').classList.remove('hidden');
+        document.getElementById('header').classList.remove('hd-bgc');
+    }
+}
+function header_2() {
+    const scrollY = window.pageYOffset;
+
+
+    if (scrollY > 600) {
+        document.getElementById('hd-logo').classList.add('hidden-2');
+        document.getElementById('header').classList.add('hd-bgc-2');
+    } else {
+        document.getElementById('hd-logo').classList.remove('hidden-2');
+        document.getElementById('header').classList.remove('hd-bgc-2');
+    }
+}
+
+
+
+
+
+
+document.addEventListener('scroll', header_1);
+document.addEventListener('scroll', header_2);
 document.getElementById('hum').addEventListener('click', hamburger);
 document.getElementById('sp-navmenu').addEventListener('click', hamburger);
 
@@ -40,10 +73,11 @@ function callback(entries) {
 
 $(function () {
     $('a[href^="#"]').click(function () {
+        var headerHight = 70;
         var speed = 500;
         var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
+        var position = target.offset().top - headerHight;
         $("html, body").animate({ scrollTop: position }, speed, "swing");
         return false;
     });
