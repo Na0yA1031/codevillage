@@ -25,11 +25,12 @@
         width: 34%;
         @include tab {
             max-height: 446px;
-            min-width: 207px;
+            min-width: 210px;
         }
         @include sp {
             margin-left: 20px;
             width: 56%;
+            min-width: 375px;
         }
     }
     &-content p:first-child {

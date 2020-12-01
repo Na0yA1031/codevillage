@@ -740,13 +740,14 @@ nav ul a:hover {
 @media screen and (max-width: 959px) {
   .access-content {
     max-height: 446px;
-    min-width: 207px;
+    min-width: 210px;
   }
 }
 @media screen and (max-width: 600px) {
   .access-content {
     margin-left: 20px;
     width: 56%;
+    min-width: 375px;
   }
 }
 .access-content p:first-child {
