@@ -1,0 +1,189 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.all-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, black, transparent 166%);
+    box-shadow: 0 5px black;
+    margin-bottom: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    &:hover {
+      background: linear-gradient(90deg,yellow, green);
+    }
+    &:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+    // background: linear-gradient(180deg, rgba(230,1,21, .5) 0% 14%, rgba(243,152,0, .5) 14% 28%, rgba(255,240,0,.5)24% 42%,rgba(0,153,68,.5)42% 58%,rgba(0,103,183,.5)58% 72%,rgba(30,32,135,.5) 72% 86%,rgba(146,9,131,.5) 86%);
+    background: linear-gradient(180deg, rgba(230, 1, 21, 1), rgba(243, 152, 0, 1), rgba(255, 240, 0, 1), rgba(0, 153, 68, 1), rgba(0, 103, 183, 1), rgba(30, 32, 135, 1) , rgba(146, 9, 131, 1) );
+    }
+}
+
+.btn-2 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.btn-3 {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 50px;
+  background: #668ad8;
+  color: #668ad8;
+  box-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.29);
+  border-radius: 3px;
+  font-weight: bold;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+  transition: background-color .5s;
+  &:hover {
+    background-color: red;
+    color: red;
+  }
+  &:active {
+  position: relative;
+  top: 4px;
+  box-shadow: none;
+  background-color: green;
+  color: green;
+  }
+}
+
+
+
+.bg-img {
+    overflow: hidden;
+    height: 271px;
+    width: 271px;
+    margin-bottom: 50px;
+    .img {
+    background-image: url(../img/jens-lindner-4i7-mcM7xSY-unsplash.png);
+    height: 100%;
+    width: 271px;
+    transform: scale(1) rotate(0);
+    transition: transform .8s ease;
+    }
+    & .img:hover {
+    transform: scale(1.2) rotate(13deg);
+    }
+}
+
+.bg-img-2 {
+  height: 271px;
+  width: 271px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  .img-2 {
+    background-image: url(../img/beautiful-beauty-female-247322.png);
+    height: 100%;
+    width: 271px;
+    transition: .8s;
+  }
+  & .img-2:hover {
+    filter: grayscale(100%);
+    transition: .8s;
+    transform: scale(1.3);
+    background-position-y: 30px;
+  }
+}
+
+.bg-img-3 {
+  height: 271px;
+  width: 271px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  .img-3 {
+    background-image: url(../img/edgar-perez-kTBJmeRbAbo-unsplash.png);
+    height: 100%;
+    width: 271px;
+    position: relative;
+  }
+  .img-3:before {
+    content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,.25);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  }
+  .img-3:hover::before {
+    animation: circle 1s;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+.list-item a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #878787;
+  line-height: 2;
+  &::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .8s cubic-bezier(.19,1,.22,1);
+  }
+  &:hover {
+    color: black;
+  }
+  &:hover::after {
+  transform: scale(1, 1);
+  }
+}
+
+.li-2 a::after{
+  transform-origin: right;
+}
+
+.li-3 a::after {
+  transform-origin: left;
+}
